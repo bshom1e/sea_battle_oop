@@ -30,10 +30,21 @@ add_executable(naval_warfare main.cpp
         exceptions/ship_placement_error.h
         exceptions/attack_out_of_bound.cpp
         exceptions/attack_out_of_bound.h
+        exceptions/command_input_error.cpp
+        exceptions/command_input_error.h
         game/game.cpp
         game/game.h
         game/game_state.cpp
         game/game_state.h
+        game/user_input.cpp
+        game/user_input.h
         exceptions/load_error.cpp
         exceptions/load_error.h
+        game/game_controller.h
+        game/game_drawer.cpp
+        game/game_drawer.h
+        exceptions/out_of_bound.cpp
+        exceptions/out_of_bound.h
+        game/game_interface.h
+        game/simple_game_drawer.h
 )

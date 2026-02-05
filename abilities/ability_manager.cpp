@@ -8,24 +8,13 @@ AbilityManager::AbilityManager() {
 }
 
 void AbilityManager::apply_ability(pair<int, int> coords, Gamefield* gamefield) {
-  string answer;
-  cout << "Хотите использовать способность(Yes/No)?\n";
-  cin >> answer;
-  getchar();
-  while (answer != "No" && answer != "Yes") {
-    cout << "Некорректный ответ: " << answer << ". Хотите использовать способность(Yes/No)?\n";
-    cin >> answer;
-    getchar();
+  if (abilities.empty()) {
+    throw Invalid_ability_usage("Ошибка: Нет доступных способностей.");
   }
-  if (answer == "Yes") {
-    if (abilities.empty()) {
-      throw Invalid_ability_usage("Ошибка: Нет доступных способностей.");
-    }
-    srand(time(nullptr));
-    int index = rand() % abilities.size();
-    abilities[index]->use(coords, gamefield);
-    abilities.erase(abilities.begin() + index);  // Удаляем использованную способность
-  }
+  srand(time(nullptr));
+  int index = rand() % abilities.size();
+  abilities[index]->use(coords, gamefield);
+  abilities.erase(abilities.begin() + index);  // Удаляем использованную способность
 }
 
 void AbilityManager::add_random_ability() {

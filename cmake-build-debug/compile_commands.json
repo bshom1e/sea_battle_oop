@@ -79,6 +79,12 @@
 },
 {
   "directory": "/home/homie/sea_battle_oop/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/naval_warfare.dir/exceptions/command_input_error.cpp.o -c /home/homie/sea_battle_oop/exceptions/command_input_error.cpp",
+  "file": "/home/homie/sea_battle_oop/exceptions/command_input_error.cpp",
+  "output": "CMakeFiles/naval_warfare.dir/exceptions/command_input_error.cpp.o"
+},
+{
+  "directory": "/home/homie/sea_battle_oop/cmake-build-debug",
   "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/naval_warfare.dir/game/game.cpp.o -c /home/homie/sea_battle_oop/game/game.cpp",
   "file": "/home/homie/sea_battle_oop/game/game.cpp",
   "output": "CMakeFiles/naval_warfare.dir/game/game.cpp.o"
@@ -91,8 +97,26 @@
 },
 {
   "directory": "/home/homie/sea_battle_oop/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/naval_warfare.dir/game/user_input.cpp.o -c /home/homie/sea_battle_oop/game/user_input.cpp",
+  "file": "/home/homie/sea_battle_oop/game/user_input.cpp",
+  "output": "CMakeFiles/naval_warfare.dir/game/user_input.cpp.o"
+},
+{
+  "directory": "/home/homie/sea_battle_oop/cmake-build-debug",
   "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o -c /home/homie/sea_battle_oop/exceptions/load_error.cpp",
   "file": "/home/homie/sea_battle_oop/exceptions/load_error.cpp",
   "output": "CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o"
+},
+{
+  "directory": "/home/homie/sea_battle_oop/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/naval_warfare.dir/game/game_drawer.cpp.o -c /home/homie/sea_battle_oop/game/game_drawer.cpp",
+  "file": "/home/homie/sea_battle_oop/game/game_drawer.cpp",
+  "output": "CMakeFiles/naval_warfare.dir/game/game_drawer.cpp.o"
+},
+{
+  "directory": "/home/homie/sea_battle_oop/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/naval_warfare.dir/exceptions/out_of_bound.cpp.o -c /home/homie/sea_battle_oop/exceptions/out_of_bound.cpp",
+  "file": "/home/homie/sea_battle_oop/exceptions/out_of_bound.cpp",
+  "output": "CMakeFiles/naval_warfare.dir/exceptions/out_of_bound.cpp.o"
 }
 ]

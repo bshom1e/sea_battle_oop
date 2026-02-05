@@ -63,7 +63,8 @@ bool Gamefield::prove_coords(pair<int, int> coords) {
   int x = coords.first;
   int y = coords.second;
   if (x < 0 || y < 0 || x >= field_width || y >= field_height) {
-    return false;
+    throw Out_of_bound("Некорректные координаты: {" + to_string(x) + "; " + to_string(y) + "}. При размерах поля - "
+    + to_string(field_width) + "x" + to_string(field_height));
   }
   return true;
 }
@@ -231,4 +232,22 @@ void Gamefield::load(string data) {
       }
     }
   }
+}
+
+string Gamefield::full_gamefield_to_string() {
+  string str_gamefield;
+  for (int y = 0; y < field_height; y++) {
+    for (int x = 0; x < field_width; x++) {
+      if (field[y][x]->is_shipcell()) {
+        str_gamefield += to_string(field[y][x]->get_shippart()->get_hp());
+      } else if (field[y][x]->is_hit()) {
+        str_gamefield += "X";
+      } else {
+        str_gamefield += "_";
+      }
+      str_gamefield += " ";
+    }
+    str_gamefield += "\n";
+  }
+  return str_gamefield;
 }

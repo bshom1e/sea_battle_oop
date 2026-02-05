@@ -9,11 +9,17 @@
 #include <stdlib.h>
 #include <time.h>
 
+enum Gamers {
+  PLAYER,
+  COMPUTER
+};
+
 enum GameStatus {
   NOT_STARTED,
   IN_PROCESS,
   VICTORY,
-  FAILURE
+  FAILURE,
+  END
 };
 
 class Game {
@@ -28,14 +34,15 @@ class Game {
   pair<int, int> input_coordinates();
  public:
   Game();
-  void game_start(); // Начало игры
   void new_game(); // Конец игры
+  void new_computer_enemy();
   void game_save();
   void game_load();
-  void player_move(); // Ход от игрока
+  void player_attack(pair<int, int> coords); // Ход от игрока
+  void player_use_ability(pair<int, int> coords);
   void computer_move(); // Ход от компьютера
-  void rounds(); // Чередование ходов
-  void defeat();
+  GameStatus update_game_status();
+  string get_full_gamefield_string(Gamers gamer);
 };
 
 #endif //NAVAL_WARFARE_GAME_GAME_H_

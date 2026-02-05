@@ -127,6 +127,12 @@ build CMakeFiles/naval_warfare.dir/exceptions/attack_out_of_bound.cpp.o: CXX_COM
   OBJECT_DIR = CMakeFiles/naval_warfare.dir
   OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/exceptions
 
+build CMakeFiles/naval_warfare.dir/exceptions/command_input_error.cpp.o: CXX_COMPILER__naval_warfare_unscanned_Debug /home/homie/sea_battle_oop/exceptions/command_input_error.cpp || cmake_object_order_depends_target_naval_warfare
+  DEP_FILE = CMakeFiles/naval_warfare.dir/exceptions/command_input_error.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/naval_warfare.dir
+  OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/exceptions
+
 build CMakeFiles/naval_warfare.dir/game/game.cpp.o: CXX_COMPILER__naval_warfare_unscanned_Debug /home/homie/sea_battle_oop/game/game.cpp || cmake_object_order_depends_target_naval_warfare
   DEP_FILE = CMakeFiles/naval_warfare.dir/game/game.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -139,8 +145,26 @@ build CMakeFiles/naval_warfare.dir/game/game_state.cpp.o: CXX_COMPILER__naval_wa
   OBJECT_DIR = CMakeFiles/naval_warfare.dir
   OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/game
 
+build CMakeFiles/naval_warfare.dir/game/user_input.cpp.o: CXX_COMPILER__naval_warfare_unscanned_Debug /home/homie/sea_battle_oop/game/user_input.cpp || cmake_object_order_depends_target_naval_warfare
+  DEP_FILE = CMakeFiles/naval_warfare.dir/game/user_input.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/naval_warfare.dir
+  OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/game
+
 build CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o: CXX_COMPILER__naval_warfare_unscanned_Debug /home/homie/sea_battle_oop/exceptions/load_error.cpp || cmake_object_order_depends_target_naval_warfare
   DEP_FILE = CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/naval_warfare.dir
+  OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/exceptions
+
+build CMakeFiles/naval_warfare.dir/game/game_drawer.cpp.o: CXX_COMPILER__naval_warfare_unscanned_Debug /home/homie/sea_battle_oop/game/game_drawer.cpp || cmake_object_order_depends_target_naval_warfare
+  DEP_FILE = CMakeFiles/naval_warfare.dir/game/game_drawer.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/naval_warfare.dir
+  OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/game
+
+build CMakeFiles/naval_warfare.dir/exceptions/out_of_bound.cpp.o: CXX_COMPILER__naval_warfare_unscanned_Debug /home/homie/sea_battle_oop/exceptions/out_of_bound.cpp || cmake_object_order_depends_target_naval_warfare
+  DEP_FILE = CMakeFiles/naval_warfare.dir/exceptions/out_of_bound.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/naval_warfare.dir
   OBJECT_FILE_DIR = CMakeFiles/naval_warfare.dir/exceptions
@@ -153,7 +177,7 @@ build CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o: CXX_COMPILER__na
 #############################################
 # Link the executable naval_warfare
 
-build naval_warfare: CXX_EXECUTABLE_LINKER__naval_warfare_Debug CMakeFiles/naval_warfare.dir/main.cpp.o CMakeFiles/naval_warfare.dir/ships/ship.cpp.o CMakeFiles/naval_warfare.dir/gamefield/gamefield.cpp.o CMakeFiles/naval_warfare.dir/ships/ship_manager.cpp.o CMakeFiles/naval_warfare.dir/ships/shippart.cpp.o CMakeFiles/naval_warfare.dir/gamefield/cell.cpp.o CMakeFiles/naval_warfare.dir/abilities/double_damage.cpp.o CMakeFiles/naval_warfare.dir/abilities/scanner.cpp.o CMakeFiles/naval_warfare.dir/abilities/bombard.cpp.o CMakeFiles/naval_warfare.dir/abilities/ability_manager.cpp.o CMakeFiles/naval_warfare.dir/exceptions/invalid_ability_usage.cpp.o CMakeFiles/naval_warfare.dir/exceptions/ship_placement_error.cpp.o CMakeFiles/naval_warfare.dir/exceptions/attack_out_of_bound.cpp.o CMakeFiles/naval_warfare.dir/game/game.cpp.o CMakeFiles/naval_warfare.dir/game/game_state.cpp.o CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o
+build naval_warfare: CXX_EXECUTABLE_LINKER__naval_warfare_Debug CMakeFiles/naval_warfare.dir/main.cpp.o CMakeFiles/naval_warfare.dir/ships/ship.cpp.o CMakeFiles/naval_warfare.dir/gamefield/gamefield.cpp.o CMakeFiles/naval_warfare.dir/ships/ship_manager.cpp.o CMakeFiles/naval_warfare.dir/ships/shippart.cpp.o CMakeFiles/naval_warfare.dir/gamefield/cell.cpp.o CMakeFiles/naval_warfare.dir/abilities/double_damage.cpp.o CMakeFiles/naval_warfare.dir/abilities/scanner.cpp.o CMakeFiles/naval_warfare.dir/abilities/bombard.cpp.o CMakeFiles/naval_warfare.dir/abilities/ability_manager.cpp.o CMakeFiles/naval_warfare.dir/exceptions/invalid_ability_usage.cpp.o CMakeFiles/naval_warfare.dir/exceptions/ship_placement_error.cpp.o CMakeFiles/naval_warfare.dir/exceptions/attack_out_of_bound.cpp.o CMakeFiles/naval_warfare.dir/exceptions/command_input_error.cpp.o CMakeFiles/naval_warfare.dir/game/game.cpp.o CMakeFiles/naval_warfare.dir/game/game_state.cpp.o CMakeFiles/naval_warfare.dir/game/user_input.cpp.o CMakeFiles/naval_warfare.dir/exceptions/load_error.cpp.o CMakeFiles/naval_warfare.dir/game/game_drawer.cpp.o CMakeFiles/naval_warfare.dir/exceptions/out_of_bound.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/naval_warfare.dir
   POST_BUILD = :

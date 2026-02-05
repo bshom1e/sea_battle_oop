@@ -8,6 +8,7 @@
 #include "cell.h"
 #include "../ships/ship.h"
 #include "../exceptions/attack_out_of_bound.h"
+#include "../exceptions/out_of_bound.h"
 #include "../exceptions/ship_placement_error.h"
 
 class Gamefield {
@@ -34,6 +35,7 @@ class Gamefield {
   Cell* get_cell(pair<int, int> coords);
   void print_gamefield(bool enemy_flag = false);
   string gamefield_to_string();
+  string full_gamefield_to_string();
   void load(string data);
 };
 
